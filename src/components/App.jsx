@@ -4,23 +4,18 @@ import { Route, Switch, Redirect, HashRouter } from 'react-router-dom'
 import { Layout, Main, Content } from 'cozy-ui/react/Layout'
 import { Sprite as IconSprite } from 'cozy-ui/react/Icon'
 
-import Sidebar from './Sidebar'
-import Todos from './Todos'
-import Hello1 from './HelloViews/Hello1'
-import Hello2 from './HelloViews/Hello2'
+import {Sidebar} from './Sidebar'
 
 const App = () => (
   <HashRouter>
     <Layout>
-      <Sidebar />
+      <Sidebar>Sidebar</Sidebar>
       <Main>
         <Content className="app-content">
           <Switch>
-            <Route path="/todos" component={Todos} />
-            <Route path="/viewhello1" component={Hello1} />
-            <Route path="/viewhello2" component={Hello2} />
-            <Redirect from="/" to="/todos" />
-            <Redirect from="*" to="/todos" />
+            <Route path="/music" component={() => <div>Music!</div>} />
+            <Redirect from="/" to="/music" />
+            <Redirect from="*" to="/music" />
           </Switch>
         </Content>
       </Main>

@@ -1,7 +1,5 @@
 /* global cozy */
 
-import 'styles'
-
 import React from 'react'
 import CozyClient, { CozyProvider } from 'cozy-client'
 import { render } from 'react-dom'
