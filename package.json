@@ -42,9 +42,10 @@
     "redux-mock-store": "1.5.3"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
     "cozy-bar": "7.12.3",
     "cozy-client": "15.3.0",
-    "cozy-ui": "37.8.0",
+    "cozy-ui": "47.3.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-router-dom": "4.3.1"
